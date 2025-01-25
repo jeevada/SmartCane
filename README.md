@@ -96,5 +96,3 @@ Visually impaired individuals face numerous challenges in navigating their surro
 | **Total**            | **10 weeks** |
 
 ---
-
-Would you like more detail on any specific section?
