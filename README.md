@@ -1,14 +1,12 @@
 # SmartCane
-GROUP-08
+## GROUP-08
 
-TITLE : Blind Vision - A smart cane for visually impaired
-GROUP MEMBERS :
-  2021/E/011 - ARTHIKA A.
-  2021/E/147 - ANUSHANTH S.
-  2021/E/161 - AKSHALA T.H.
+### TITLE : Blind Vision - A smart cane for visually impaired<br>
+GROUP MEMBERS :<br>
+  2021/E/011 - ARTHIKA A.<br>
+  2021/E/147 - ANUSHANTH S.<br>
+  2021/E/161 - AKSHALA T.H.<br>
   2021/E/151 - JEEVAKARAN S.
-
-Here’s a breakdown of your project requirements:  
 
 ---
 
