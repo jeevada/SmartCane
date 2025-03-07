@@ -38,7 +38,8 @@ Visually impaired individuals face challenges in navigating unfamiliar environme
 
 ## System Architecture
 ### Core Modules
-1. **ESP32-CAM**: Central processing unit with built-in camera, Wi-Fi, and Bluetooth.
+1. **ESP32-WROOM** : Central processing unit with built-in Wi-Fi, and Bluetooth.
+1. **ESP32-CAM**: For capturing the image
 2. **Ultrasonic Sensor (HC-SR04)**: For obstacle detection.
 3. **GPS Module (GY-NEO6MV2)**: For real-time tracking.
 4. **GSM Module (SIM800L)**: For communication with caregivers.
@@ -52,14 +53,11 @@ Visually impaired individuals face challenges in navigating unfamiliar environme
 
 ## Circuit Design & Protocols
 ### Design Principles
-- Compact and modular PCB layout.
 - Proper grounding to reduce noise and interference.
-- Component protection with Schottky diodes and TVS diodes.
 
 ### Protocols
 - **Power Management**: Stable and efficient power supply.
 - **Signal Integrity**: Minimized interference for reliable communication.
-- **Safety**: Overcurrent protection and insulation for durability.
 
 ---
 
@@ -67,12 +65,13 @@ Visually impaired individuals face challenges in navigating unfamiliar environme
 | Component                     | Quantity | Unit Cost (LKR) | Total Cost (LKR) |
 |-------------------------------|----------|-----------------|------------------|
 | ESP32-CAM                     | 1        | 2160.00         | 2160.00          |
+| ESP32-WROOM                   | 1        | 1300            | 1300.00          |
 | GSM Module (SIM800L)          | 1        | 1050.00         | 1050.00          |
 | GPS Module (GY-NEO6MV2)       | 1        | 900.00          | 900.00           |
 | Ultrasonic Sensor (HC-SR04)   | 1        | 230.00          | 230.00           |
 | Rechargeable Batteries        | 4        | 190.00          | 760.00           |
-| Additional Components         | -        | -               | 2175.00          |
-| **Total**                     | -        | -               | **7275.00**      |
+| Additional Components         | -        | -               | 1500.00          |
+| **Total**                     | -        | -               | **7900.00**      |
 
 ---
 
@@ -90,13 +89,6 @@ This repository includes:
 2. Circuit schematics.
 3. Codebase for ESP32-CAM, GPS, and GSM modules.
 4. Testing protocols and results.
-
-Feel free to contribute by creating issues or submitting pull requests.
-
----
-
-## License
-This project is open-source and licensed under the [MIT License](LICENSE).
 
 ---
 
