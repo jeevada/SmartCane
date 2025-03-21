@@ -1,0 +1,8 @@
+ets Ju  8 206 00:22:57
+
+rst:0x1(POWERON_RESET),boot:0x (DOWNLOAD_BOOT(UART/UART1SDIO_REI_FEO_V2)
+wating for download
+ets Jun  8 201 00:2257
+
+rst:0x1 (POERON_RESET),boot:0x3 (DOWLOAD_BOOT(UART0/UAT1/SDO_REI_REO_V2))
+waiing for download
