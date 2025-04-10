@@ -15,18 +15,20 @@ const defaultIcon = L.icon({
   iconAnchor: [12, 41],
 });
 
-const socket = io("http://localhost:5000");
+const socket = io("http://localhost:5000"); // Your backend server
 
 const Dashboard = () => {
   const [location, setLocation] = useState(null);
+  const [imageBase64, setImageBase64] = useState(null);
   const [imageUrl, setImageUrl] = useState(null);
 
   useEffect(() => {
     socket.on("locationUpdate", (data) => {
-      setLocation(data);
+      setLocation(data); // { latitude: ..., longitude: ... }
     });
 
     socket.on("imageUpdate", (data) => {
+      setImageBase64(data.imageBase64); // This should be a base64 string (no prefix)
       setImageUrl(data.imageUrl);
     });
 
@@ -38,14 +40,13 @@ const Dashboard = () => {
 
   return (
     <div className="min-h-screen bg-gray-100 p-6 flex flex-col items-center text-center">
-      {/* Logo */}
       <img
         src={logo}
         alt="Blind Vision Logo"
         className="w-32 h-32 rounded-full mb-4 shadow-lg border-4 border-white"
       />
       <h1 className="text-3xl font-bold text-blue-600 mb-6">
-        Blind Vision Dashboard
+        Blind Vision
       </h1>
 
       {/* Map Section */}
@@ -73,9 +74,9 @@ const Dashboard = () => {
 
       {/* Image Section */}
       <div className="w-full max-w-2xl bg-white rounded-lg shadow-md p-4">
-        {imageUrl ? (
+         {imageBase64 ? ( 
           <img
-            src={imageUrl}
+            src={`data:image/jpeg;base64,${imageBase64}`}
             alt="Captured Scene"
             className="w-full h-150 object-cover rounded-lg"
           />
